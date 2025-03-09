@@ -45,7 +45,7 @@ function App() {
       <div className="App">
         <Routes>
           {/* c */}
-       
+       <Route path = "/" element = {<S />} />
              <Route path = "/engfe1" element = {<S />} />
              <Route path = "/test" element = {<Test2 />} />
              <Route path='/call' element={<Call />} />
