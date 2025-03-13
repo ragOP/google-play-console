@@ -155,6 +155,9 @@ export default function Fifth_SP() {
       setTimeout(() => {
         setStep("completed");
         setShowBaarish(true);
+        setTimeout(() => {
+            setShowBaarish(false);
+        }, 1500)
       }, 1500);
     }
 
