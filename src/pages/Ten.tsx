@@ -9,6 +9,7 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/share.png";
 import Headline from "../assets/headline_spandeb1.png";
+import bpp from "../assets/bpp.png";
 
 // google tag manager
 // const tagManagerArgs = {
@@ -30,6 +31,26 @@ export default function Fifth_SP() {
     "Sayem K. from Texas just qualified for a $36,000 Final Expense Coverage",
     "Tom D. from SEATTLE,WA just qualified for a $40,000 Final Expense Coverage",
   ];
+
+  const [count, setCount] = useState(22578);
+  const [enrollmentCount, setEnrollmentCount] = useState(22578);
+  const [claimCount, setClaimCount] = useState(69);
+
+
+  useEffect(() => {
+    const enrollmentInterval = setInterval(() => {
+      setEnrollmentCount((prev) => prev + Math.floor(Math.random() * 2) + 1);
+    }, 2000); // Updates every 3 seconds
+
+    const claimInterval = setInterval(() => {
+      setClaimCount((prev) => prev + Math.floor(Math.random() * 1) + 1);
+    }, 2000); // Updates every 5 seconds
+
+    return () => {
+      clearInterval(enrollmentInterval);
+      clearInterval(claimInterval);
+    };
+  }, []);
   const [showBaarish, setShowBaarish] = useState(false);
 
   // Function to shuffle array in place
@@ -308,7 +329,10 @@ export default function Fifth_SP() {
         className="top-sticky-blue-test2"
         id="top"
       >
-        Benefits For Elderly
+   <center>
+   <img src={bpp} alt="Burial Protection Plan" style={{width: "50%"}}/>
+   </center>
+
       </div>
       <div
       style={{
@@ -324,14 +348,14 @@ export default function Fifth_SP() {
         justifyContent: "center",
       }}
     >
-      {/* <img
+      <img
         style={{ width: "10%", marginRight: "5px" }}
-        src={liveImage}
+        src={"https://www.burialprotectionplan.org/live.png"}
         alt="Live Indicator"
-      /> */}
+      />
       <em>
         <span id="counter" style={{ fontWeight: 800 }}>
-          22,578
+        {enrollmentCount.toLocaleString()}
         </span>{" "}
         Seniors Enrolled In Last 24 Hours!
       </em>
@@ -435,7 +459,7 @@ export default function Fifth_SP() {
       <p style={{ textAlign: "center", marginLeft: "10px" }}>
         <em>
           <span id="claim" style={{ color: "#22c55e" }}>
-            69
+          {claimCount.toLocaleString()}
           </span>{" "}
           People Are Claiming Right Now!
         </em>
@@ -476,11 +500,11 @@ export default function Fifth_SP() {
           Beware of other fraudulent & similar-looking websites that might look
           exactly like ours, we have no affiliation with them. This is the only
           official website to claim your Burial Protection Plan with the domain
-          name burialprotectionplan.org.
+          name benefitsforelderly.org.
         </p>
         <div className="terms">Terms & Conditions | Privacy Policy</div>
       </div>
-      <ToastContainer
+      {/* <ToastContainer
         position="bottom-right"
         autoClose={5000}
         newestOnTop={false}
@@ -489,7 +513,7 @@ export default function Fifth_SP() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-      />
+      /> */}
     </div>
   );
 }
