@@ -374,8 +374,7 @@ export default function Fifth_SP() {
               <div className="main-des-title-6-7">
                 <b>
                   Final Call For Seniors To Claim Their{" "}
-                  <span style={{ color: " #03b55f" }}> $40,000</span> Burial
-                  Protection Plan!
+                  <span style={{ color: " #03b55f" }}> $40,000</span> Final Expense Benefit
                 </b>
               </div>
 
