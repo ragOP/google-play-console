@@ -475,8 +475,8 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulations, You Qualify!</div>
           <div className="top-description-5">
-            Make A <b>Quick Call </b> To Claim <b>$40,000</b> Your Final Expense Benefit
-             Plan Now!
+          Make A <b>Quick Call </b> To Claim  Your <b>$40,000</b>  Final Expense Benefit
+          Now!
           </div>
           <div className="spots-count">Spot Remaining: 4</div>
           <a href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}>
