@@ -379,13 +379,13 @@ export default function Fifth_SP() {
               </div>
 
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
-              <img className="topic-img-middle-z" src={Head_bg} alt="head" />
+                <img className="topic-img-middle-z" src={Head_bg} alt="head" style={{ borderRadius: "7px" }} />
               <div
                 style={{
                   marginTop: "10px",
                   textAlign: "center",
                   fontSize: "16px",
-                  fontWeight: 600,
+                  fontWeight: 700,
                   lineHeight: "20px",
                   marginBottom: "0",
                 }}
@@ -430,7 +430,7 @@ export default function Fifth_SP() {
   padding: "3px 20px 1px 20px",
   borderRadius: "0px 0px 10px 10px",
 }} className="survey">
-              <div className="quiz-5" id="btn" style={{"textAlign": "center", fontSize: "23px",marginTop:"3px"}}>
+              <div className="quiz-5" id="btn" style={{"textAlign": "center", fontSize: "23px",marginTop:"5px"}}>
                 {quiz}
               </div>
               <div className="answer">
@@ -453,6 +453,7 @@ export default function Fifth_SP() {
         justifyContent: "center",
         alignItems: "center",
         marginTop: "10px",
+        marginBottom: "10px",
       }}
     >
       <div className="pulse"></div>
@@ -476,7 +477,7 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulations, You Qualify!</div>
           <div className="top-description-5">
-          Make A <b>Quick Call </b> To Claim  Your <b>$40,000</b>  Final Expense Benefit
+          Make A <b>Quick Call </b> To Claim  Your <b>$40,000</b>  Final Expense Benefit!
           Now!
           </div>
           <div className="spots-count">Spot Remaining: 4</div>
