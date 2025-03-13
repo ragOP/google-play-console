@@ -153,12 +153,12 @@ export default function Fifth_SP() {
     getButtonClick({ buttonId: 5 });
   };
 
-  const [quiz, setQuiz] = useState("1. Are you over 50?");
+  const [quiz, setQuiz] = useState("1. Are you over 55?");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
-  const [yes, setYes] = useState("YES, I'M 50 OR OLDER");
-  const [no, setNo] = useState("NO, I'M 49 OR YOUNGER");
+  const [yes, setYes] = useState("YES, I'M 55 OR OLDER");
+  const [no, setNo] = useState("NO, I'M 54 OR YOUNGER");
 
 
   const stepProcess = () => {
@@ -204,7 +204,7 @@ export default function Fifth_SP() {
 
   const handleQuizP = () => {
     topScroll("btn");
-    if (quiz === "1. Are you over 50?") {
+    if (quiz === "1. Are you over 55?") {
       setQuiz("2. Do You Live in the USA?");
       setYes("Yes");
       setNo("No");
@@ -218,7 +218,7 @@ export default function Fifth_SP() {
 
   const handleQuizN = () => {
     topScroll("btn");
-    if (quiz === "1. Are you over 50?") {
+    if (quiz === "1. Are you over 55?") {
       setQuiz("2. Do You Live in the USA?");
       setYes("Yes");
       setNo("No");
@@ -325,13 +325,13 @@ export default function Fifth_SP() {
       {/* <ToastContainer /> */}
 
       <div
-        style={{ marginBottom: "0px", height: "60px" }}
+        style={{ marginBottom: "0px", height: "60px", background: "linear-gradient(90deg, #003f91, #006cb8)" }}
         className="top-sticky-blue-test2"
         id="top"
       >
-   <center>
-   <img src={bpp} alt="Burial Protection Plan" style={{width: "50%"}}/>
-   </center>
+       <center>
+       <img src={bpp} alt="Burial Protection Plan" style={{width: "50%"}}/>
+       </center>
 
       </div>
       <div
@@ -404,15 +404,16 @@ export default function Fifth_SP() {
       </div>
 
       {/* Container Section */}
-      <div style={{ backgroundColor: "#f1f1f1", height: "60px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <div style={{ backgroundColor: "#f1f1f1", height: "60px",  }}>
         <div
           style={{
             backgroundColor: "#045ab6",
             fontSize: "14px",
-            padding: "15px 15px",
+            padding: "15px 5px",
             borderRadius: "15px",
             color: "#fff",
             boxShadow: "0px 5px 0px #03b55f",
+            
             marginBottom: "5px",
             textAlign: "center",
             fontWeight: "bold",
@@ -429,7 +430,7 @@ export default function Fifth_SP() {
   padding: "3px 20px 1px 20px",
   borderRadius: "0px 0px 10px 10px",
 }} className="survey">
-              <div className="quiz-5" id="btn" style={{"textAlign": "center", fontSize: "23px"}}>
+              <div className="quiz-5" id="btn" style={{"textAlign": "center", fontSize: "23px",marginTop:"3px"}}>
                 {quiz}
               </div>
               <div className="answer">
