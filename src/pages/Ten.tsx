@@ -476,7 +476,8 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulations, You Qualify!</div>
           <div className="top-description-5">
-            Make A <b>Quick Call </b> To Claim <b>$40,000</b> Your Burial Protection Plan Now!
+            Make A <b>Quick Call </b> To Claim <b>$40,000</b> Your Final Expense Benefit
+             Plan Now!
           </div>
           <div className="spots-count">Spot Remaining: 4</div>
           <a href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}>
@@ -499,7 +500,7 @@ export default function Fifth_SP() {
         <p>
           Beware of other fraudulent & similar-looking websites that might look
           exactly like ours, we have no affiliation with them. This is the only
-          official website to claim your Burial Protection Plan with the domain
+          official website to claim your Final Expense Benefit with the domain
           name benefitsforelderly.org.
         </p>
         <div className="terms">Terms & Conditions | Privacy Policy</div>
