@@ -37,6 +37,7 @@ import Test2 from './pages/Test2'
 import Sur from './pages/Sur'
 import Sureng from './pages/Sureng'
 import Call from './pages/Call'
+import Ten from './pages/Ten'
 function App() {
  console.log('s');
   return (
@@ -47,6 +48,7 @@ function App() {
           {/* c */}
        <Route path = "/" element = {<S />} />
              <Route path = "/engfe1" element = {<S />} />
+             <Route path = "/engfe10" element = {<Ten />} />
              <Route path = "/test" element = {<Test2 />} />
              <Route path='/call' element={<Call />} />
              <Route path = "/engfe25k" element = {<SE />} />
