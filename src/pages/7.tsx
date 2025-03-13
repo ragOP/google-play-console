@@ -345,7 +345,7 @@ export default function Fifth_SP() {
 
             <div className="main-des-title-6-7">
   <b>
-  Cover All Your Burial Costs and Unpaid Debts with This 2 {""}
+  Cover All Your Burial Costs and Unpaid Debts with This  {""}
     <span style={{ backgroundColor: "#FFC300" }}>
     Final Allowance Benefit Worth $40,000!
     </span>{" "}
