@@ -386,7 +386,7 @@ export default function Fifth_SP() {
                   marginTop: "10px",
                   textAlign: "center",
                   fontSize: "16px",
-                  fontWeight: 900,
+                  fontWeight: 600,
                   lineHeight: "20px",
                   marginBottom: "0",
                 }}
